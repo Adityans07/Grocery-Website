@@ -1,0 +1,335 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 10px;
+  background: #f7f3f3;
+}
+@keyframes grad {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+ul {
+    list-style-type: none;
+    margin: 10px 20px;
+    padding: 3px 20px;
+    overflow: hidden;
+    position: sticky;
+
+border-radius: 40px;
+  box-shadow: 3px 3px 20px #ff3352;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+  background-image: linear-gradient(-45deg, #ff5959, #ff4040, #ff0d6e, #ff8033,#d74177);	
+  background-size: 400% 400%;
+	animation: grad 15s ease infinite;
+}
+.nav-item{
+    font-family: montserrat;
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+  }
+  .icon-tray{
+    text-align: right;
+    color: white;
+    margin-top: 20px ;
+  }
+  .icon{
+    padding: 3px;
+    font-size: 16px;
+  }
+  .icon:hover{
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1); 
+  transition-duration: 0.3s;
+  }
+
+/* Header/Blog Title */
+.header {
+ height: 600px;
+  padding: 30px;
+  text-align: center;
+  background: rgb(235, 233, 131);
+ background-image:   url("home/gr2.jpg");
+}
+
+
+.header h1 {
+  font-size: 50px;
+  font-family: fantasy ;
+  color: #36ec54;  
+  
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(141, 223, 191);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: hsl(104, 61%, 20%);
+  text-align: center;
+  padding: 14px 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(195, 231, 63);
+  color: rgb(148, 15, 15);
+}
+
+@keyframes bgcolor {
+    0% {
+        background-color: #45a3e5
+    }
+
+    30% {
+        background-color: #66bf39
+    }
+
+    60% {
+        background-color: #eb670f
+    }
+
+    90% {
+        background-color: #f35
+    }
+
+    100% {
+        background-color: #864cbf
+    }
+}
+
+.topnav {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: none;
+  
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  
+  background-color: #8fdba6;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: rgb(240, 232, 216);
+  padding: 20px;
+  margin-top: 60px;
+  width: 900px;
+   margin-left: 250px;
+  font-size:medium ;
+font-style: oblique;
+background-image: url(home/chlng.jpg);
+
+}
+
+.card1 {
+  background-color: rgb(173, 167, 153);
+  padding: 20px;
+  margin-top: 60px;
+  
+  font-size:medium ;
+font-style: oblique;
+
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  
+  margin-top: 50px;
+  font-family: sans-serif;
+height: 320px;
+  
+  
+  
+  background-image: url("home/offer2.jpg");
+  
+}
+.footer p:hover{
+  background-color: seagreen;
+  color: chartreuse;
+}
+
+h1{
+  color: aquamarine;
+  font-size: xx-large;
+  
+}
+
+
+
+  
+ 
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="row navbar">
+    <div class="col-12">
+      <ul>
+        <li><a class="logo-link" href="./Home.html"><i class="fas fa-shopping-basket fa-2x logo"></i></a></li>
+        <li><a class=" nav-item brand-name"  href="WEB2.html">Grocery Mania</a></li>
+        <li><a class="active nav-item" href="./web3.html">Revolution</a></li>
+        <li><a class=" nav-item"  href="./index.html">Products</a></li>
+        <li><a class=" nav-item"  href="./Advantages.html">Advantages</a></li>
+        <li><a class=" nav-item"  href="./forum.html">Apply For Sample</a></li>
+        <li><a class=" nav-item" target="_blank"  href="./Contactt.html">Contact Us</a></li>
+
+        <div class="icon-tray">
+          <i class="fab fa-instagram  ig  icon"></i>
+          <i class="fab fa-facebook  fb icon"></i>
+          <i class="fab fa-youtube  icon yt icon"></i>
+          <i class="fab fa-twitter  icon tw icon"></i>
+        </div>
+      </ul>
+    </div>
+  </div>
+
+  <div class="header">
+  <h1  >GROCERY</h1>
+ 
+  
+ 
+</div>
+
+<div class="card">
+  <img align="center" src="home/offer1.jpg" alt="">
+
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>CHALLENGES</h2>
+      
+      <p>In 2009, the UN-FAO released a report predicting that the world’s population would grow 34% by 2050.
+       Among the many challenges posed by a growing world population, a primary challenge will be to ensure an
+        adequate food supply for this vast population. This challenge is further complicated as the predominance of
+         population growth will occur in regions of the world where food security issues are already rampant. </p>
+        
+        <p> The predicted increase in global demand for food has brought the agricultural and food production industries
+         o the spotlight. As a global community, we will not only need to find ways to produce enough food to feed a
+          growing world population, but we will need do so in a way that is sustainable and economically viable.</p>
+     
+          <p>Like any other business, agricultural business generates profits by producing a product that can be sold
+         for a higher price than the total cost of the inputs used to create the products. For farmers to make
+          money, they look to maximize yield while using the minimal amount of inputs. The primary inputs in the 
+          business of agriculture include, in addition to land and human labour, machinery, seeds, water and
+           irrigation systems, herbicides/pesticides and fertilizers. With food prices generally low and
+            environmental circumstances necessitating high volumes of agricultural inputs, farmers are struggling
+             to ensure that the market value of their products is greater than the cost of their inputs, and so
+              farms are struggling to remain profitable.</p>
+     
+              <p>With global demand for food rising as populations grow, and farmers’ margins tightening, the world of
+         agriculture and food production presents a ripe target for disruptive technologies. Sure enough,
+          recent years have seen a dramatic increase in the number of food and agricultural technology 
+          start-ups and a parallel increase in investment dollars being funneled towards the sector.</p>
+    </div>
+    
+
+
+<div class="footer">
+ 
+
+</div>
+
+<div class="card1">
+  <h2>about</h2>
+  
+ <p>Grocere is built around the idea that all Indians should be able to access high-quality products at affordable prices, and be given the opportunity to upgrade their lives. As part of this mission we want it to be easy for our consumers to make healthier and better choices in buying everyday products, and we do it by making an assortment of high-quality grocery products accessible, affordable and available at their doorsteps, on their preferred schedules.
+
+  Grocere, as a platform, brings together the consumers looking for everyday essentials, partners that are serving their needs efficiently and manufacturers looking for a conduit to the consumers. All of this magic happens through our proprietary technology stack.
+  
+  We know it’s an audacious goal, and are confident that we will meet this challenge. If this seems exciting to you, join us!</p>
+  
+</div>
+
+
+</body>
+</html>
